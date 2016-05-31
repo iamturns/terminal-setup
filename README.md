@@ -77,7 +77,6 @@ npm install -g tldr
 
 brew install desk
 desk init
-mkdir -p ~/.config/fish/completions
 # cp /path/to/desk/repo/shell_plugins/fish/desk.fish ~/.config/fish/completions
 # cp /usr/local/share/fish/vendor_completions.d/desk.fish ~/.config/fish/completions
 
