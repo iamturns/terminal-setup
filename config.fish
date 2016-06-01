@@ -5,18 +5,8 @@
 # Local scripts
 set PATH $HOME/bin $PATH
 
-# Homebrew
-set PATH /usr/local/bin /usr/local/sbin $PATH
-
-# Go
-# set PATH /usr/local/opt/go/libexec/bin $PATH
-
-# Composer
-# set PATH $HOME/.composer/vendor/bin $PATH
-
-# Android SDK
-# set PATH $HOME/Documents/android-sdk-macosx/platform-tools $PATH
-# set PATH $HOME/Documents/android-sdk-macosx/tools $PATH
+# Place future path adjustments here
+# set PATH /full/path/here $PATH
 
 # Done
 set -x PATH $PATH
