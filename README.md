@@ -1,10 +1,12 @@
 Fish config
 ===========
 
-My config and setup for [Fish shell](https://fishshell.com/).
+My terminal config and setup.
 
 Includes
 --------
+
+[iTerm](http://iterm2.com/) and [Fish shell](https://fishshell.com/), with;
 
 - [bobthefish](https://github.com/oh-my-fish/theme-bobthefish): theme with git status, timestamps, abbreviated path, flags, and more. 
 - [desk](https://github.com/jamesob/desk): allows saving custom commands for various workspaces.
@@ -16,13 +18,10 @@ Includes
 - [tldr](https://github.com/tldr-pages/tldr): simplified man pages.
 - [z](https://github.com/fisherman/z): jump around directories by frecency.
 
-
-
 Requirements
-============
+------------
 
 - [Homebrew](http://brew.sh/)
-- Nerd font (see below)
 
 Nerd font
 ---------
@@ -33,14 +32,32 @@ I like ['Hack' font](https://github.com/chrissimpkins/Hack), which is patched as
 
 Download Regular > Complete > Mono version.
 
+iTerm
+-----
 
+[Download here](http://iterm2.com)
 
-Let's do this!
-==============
+- Preferences
+    - Appearance
+        - Theme: Dark (High contrast)
+    - Profiles
+        - Text > Font > Select nerd font
+    - Keys
+        - Hotkeys > Tick: Show/hide iTerm2 with a system-wide hotkey
+            - Set to All + \
+        - Key Mappings > Add two new items;
+            - Cmd + Right = Next pane
+            - Cmd + Left = Previous pane
 
-- Install [iTerm](https://iterm2.com/)
-- iTerm Preferences > Profiles > Text > Font > Select nerd font
-    - Make sure to set the same font to both Regular and Non-ASCII.
+### Color scheme
+
+Many are available within [this collection](http://iterm2colorschemes.com/).
+
+My favourite: 'Solarized dark high contrast'
+
+- Fetch them locally: `git clone git@github.com:mbadolato/iTerm2-Color-Schemes.git /var/www/vendor/iTerm2-Color-Schemes`
+- iTerm > Preferences > Profiles > Colors > Color Presets > Import
+- Select from `/var/www/vendor/iTerm2-Color-Schemes`
 
 Fish
 ----
@@ -59,8 +76,8 @@ Set fish as default shell;
 
 Now restart iTerm. Welcome to fish shell!
 
-Commands
---------
+Setup
+-----
 
 ```bash
 ### Directories ###
