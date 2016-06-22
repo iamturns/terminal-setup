@@ -6,7 +6,7 @@ My terminal config and setup.
 Includes
 --------
 
-[iTerm](http://iterm2.com/) and [Fish shell](https://fishshell.com/), with;
+[iTerm](http://iterm2.com/) and [Fish shell](https://fishshell.com/) with;
 
 - [bobthefish](https://github.com/oh-my-fish/theme-bobthefish): theme with git status, timestamps, abbreviated path, flags, and more. 
 - [desk](https://github.com/jamesob/desk): allows saving custom commands for various workspaces.
