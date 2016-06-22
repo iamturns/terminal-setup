@@ -33,8 +33,6 @@ I like ['Hack' font](https://github.com/chrissimpkins/Hack), which is patched as
 
 Download Regular > Complete > Mono version.
 
-When setting up the font within iTerm, make sure to set the same font to both Regular and Non-ASCII.
-
 
 
 Let's do this!
