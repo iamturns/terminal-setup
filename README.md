@@ -40,26 +40,39 @@ When setting up the font within iTerm, make sure to set the same font to both Re
 Let's do this!
 ==============
 
-```
-### Install fish ###
+- Install [iTerm](https://iterm2.com/)
+- iTerm Preferences > Profiles > Text > Font > Select nerd font
+    - Make sure to set the same font to both Regular and Non-ASCII.
 
-brew install fish
+Fish
+----
 
-# Tell system about new shell
+Install;
 
-echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+    brew install fish
 
-# Set fish as default shell
+Tell system about new shell;
 
-chsh -s /usr/local/bin/fish
+    echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 
-### Config ###
+Set fish as default shell;
 
-curl -o ~/.config/fish/config.fish https://raw.githubusercontent.com/turnbullm/fish-config/master/config.fish
+    chsh -s /usr/local/bin/fish
 
+Now restart iTerm. Welcome to fish shell!
+
+Commands
+--------
+
+```bash
 ### Directories ###
 
-mkdir ~/bin
+mkdir ~/.config/fish/completions
+mkdir ~/bin/
+
+### Fish config ###
+
+curl -o ~/.config/fish/config.fish https://raw.githubusercontent.com/turnbullm/fish-config/master/config.fish
 
 ### Fisherman ###
 
@@ -70,16 +83,19 @@ curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
 brew install git-extras
 brew install git-flow-avh
 brew install thefuck
-
 npm install -g tldr
 
-# Desk
+## Desk ##
 
 brew install desk
 desk init
-mkdir -p ~/.config/fish/completions
-# cp /path/to/desk/repo/shell_plugins/fish/desk.fish ~/.config/fish/completions
-# cp /usr/local/share/fish/vendor_completions.d/desk.fish ~/.config/fish/completions
+
+# Accept defaults
+
+
+# Look for fish completions installation directory and adjust below accordingly;
+
+cp /usr/local/share/fish/vendor_completions.d/desk.fish ~/.config/fish/completions/desk.fish
 
 ### Fish goodies ###
 
@@ -89,10 +105,7 @@ fisher omf/theme-bobthefish
 fisher z
 ```
 
-Paths
------
-
-Most paths have been commented out within `config.fish`. Manually comment them out if they apply.
+All done! Prepare yourself and restart iTerm :)
 
 
 
