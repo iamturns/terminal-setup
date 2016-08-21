@@ -5,18 +5,18 @@
 # Local scripts
 set PATH $HOME/bin $PATH
 
-# Place future path adjustments here
-# set PATH /full/path/here $PATH
+# Homebrew
+# set PATH /usr/local/bin /usr/local/sbin $PATH
+
+# Go
+# set PATH /usr/local/go/bin $PATH
+# set -x GOPATH /usr/local/go
+
+# Composer
+# set PATH $HOME/.composer/vendor/bin $PATH
 
 # Done
 set -x PATH $PATH
-
-###
-# Go
-# https://gola.org/
-###
-
-set -x GOPATH $HOME/go
 
 ###
 # rbenv
@@ -31,7 +31,6 @@ status --is-interactive; and . (rbenv init -|psub)
 ###
 
 eval (thefuck --alias | tr '\n' ';')
-
 
 ###
 # Theme (bobthefish)
