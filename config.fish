@@ -9,6 +9,7 @@ set PATH $HOME/bin $PATH
 # set PATH /usr/local/bin /usr/local/sbin $PATH
 
 # Go
+# set PATH /usr/local/opt/go/libexec/bin $PATH
 # set PATH /usr/local/go/bin $PATH
 # set -x GOPATH /usr/local/go
 
