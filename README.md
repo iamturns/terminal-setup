@@ -3,25 +3,26 @@ Fish config
 
 My terminal config and setup.
 
-Includes
---------
-
-[iTerm](http://iterm2.com/) and [Fish shell](https://fishshell.com/) with;
-
-- [bobthefish](https://github.com/oh-my-fish/theme-bobthefish): theme with git status, timestamps, abbreviated path, flags, and more. 
-- [desk](https://github.com/jamesob/desk): allows saving custom commands for various workspaces.
-- [git-extras](https://github.com/tj/git-extras): additional git commands.
-- [gitflow-avh](https://github.com/petervanderdoes/gitflow-avh): gitflow branching model.
+- [iTerm](http://iterm2.com/)
+- [Fish shell](https://fishshell.com/)
+- [bobthefish](https://github.com/oh-my-fish/theme-bobthefish): theme with git status, timestamps, abbreviated path, flags, and more
+- [desk](https://github.com/jamesob/desk): allows saving custom commands for various workspaces
+- [git-extras](https://github.com/tj/git-extras): additional git commands
+- [gitflow-avh](https://github.com/petervanderdoes/gitflow-avh): gitflow branching model
+- [httpstat](https://github.com/reorx/httpstat): visualizes curl stats
 - [rbenv](https://github.com/rbenv/rbenv)
-- [tab](https://github.com/oh-my-fish/plugin-tab): control tabs from command line.
-- [thefuck](https://github.com/nvbn/thefuck): correct previous command.
-- [tldr](https://github.com/tldr-pages/tldr): simplified man pages.
-- [z](https://github.com/fisherman/z): jump around directories by frecency.
+- [tab](https://github.com/oh-my-fish/plugin-tab): control tabs from command line
+- [thefuck](https://github.com/nvbn/thefuck): correct previous command
+- [tldr](https://github.com/tldr-pages/tldr): simplified man pages
+- [z](https://github.com/fisherman/z): jump around directories by frecency
 
 Requirements
 ------------
 
-- [Homebrew](http://brew.sh/)
+- Homebrew
+- Node
+
+See [Machine Hello](https://github.com/turnbullm/til/blob/master/misc/mac/machine-hello.md) for installation.
 
 Nerd font
 ---------
@@ -98,6 +99,7 @@ curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
 brew install git-extras
 brew install git-flow-avh
 brew install thefuck
+brew install httpstat
 npm install -g tldr
 
 ## Desk ##
