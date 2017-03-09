@@ -5,7 +5,7 @@ Terminal setup
 - [Fish shell](https://fishshell.com/)
 - [bobthefish](https://github.com/oh-my-fish/theme-bobthefish): theme with git status, timestamps, abbreviated path, flags, and more
 - [desk](https://github.com/jamesob/desk): allows saving custom commands for various workspaces
-- [fkill](https://github.com/sindresorhus/fkill-cli)
+- [fkill](https://github.com/sindresorhus/fkill-cli): fabulously kill processes 
 - [git-extras](https://github.com/tj/git-extras): additional git commands
 - [gitflow-avh](https://github.com/petervanderdoes/gitflow-avh): gitflow branching model
 - [httpstat](https://github.com/reorx/httpstat): visualizes curl stats
