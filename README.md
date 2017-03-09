@@ -1,12 +1,11 @@
-Fish config
-===========
-
-My terminal config and setup.
+Terminal setup
+==============
 
 - [iTerm](http://iterm2.com/)
 - [Fish shell](https://fishshell.com/)
 - [bobthefish](https://github.com/oh-my-fish/theme-bobthefish): theme with git status, timestamps, abbreviated path, flags, and more
 - [desk](https://github.com/jamesob/desk): allows saving custom commands for various workspaces
+- [fkill](https://github.com/sindresorhus/fkill-cli)
 - [git-extras](https://github.com/tj/git-extras): additional git commands
 - [gitflow-avh](https://github.com/petervanderdoes/gitflow-avh): gitflow branching model
 - [httpstat](https://github.com/reorx/httpstat): visualizes curl stats
@@ -98,8 +97,9 @@ curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
 
 brew install git-extras
 brew install git-flow-avh
-brew install thefuck
 brew install httpstat
+brew install thefuck
+npm install -g fkill-cli
 npm install -g tldr
 
 ## Desk ##
@@ -108,7 +108,6 @@ brew install desk
 desk init
 
 # Accept defaults
-
 
 # Look for fish completions installation directory and adjust below accordingly;
 
@@ -160,6 +159,11 @@ desk go {{name}}
 desk
 say_hello test
 ```
+
+fkill
+-----
+
+Easily kill tasks, see `fkill --help`
 
 git extras
 ----------
