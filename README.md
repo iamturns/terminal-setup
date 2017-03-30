@@ -7,6 +7,7 @@ Terminal setup
 - [desk](https://github.com/jamesob/desk): allows saving custom commands for various workspaces
 - [fkill](https://github.com/sindresorhus/fkill-cli): fabulously kill processes 
 - [git-extras](https://github.com/tj/git-extras): additional git commands
+- [git-standup](https://github.com/kamranahmedse/git-standup): recall what you did on the last working day
 - [gitflow-avh](https://github.com/petervanderdoes/gitflow-avh): gitflow branching model
 - [httpstat](https://github.com/reorx/httpstat): visualizes curl stats
 - [rbenv](https://github.com/rbenv/rbenv)
@@ -100,6 +101,7 @@ brew install git-flow-avh
 brew install httpstat
 brew install thefuck
 npm install -g fkill-cli
+npm install -g git-standup
 npm install -g tldr
 
 ## Desk ##
@@ -169,6 +171,11 @@ git extras
 ----------
 
 See [full command list](https://github.com/tj/git-extras/blob/master/Commands.md).
+
+git standup
+-----------
+
+Simple: `git standup`
 
 git flow
 --------
