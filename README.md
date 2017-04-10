@@ -123,7 +123,10 @@ fisher omf/theme-bobthefish
 fisher z
 ```
 
-All done! Prepare yourself and restart iTerm :)
+All done!
+---------
+
+Prepare yourself and restart iTerm :)
 
 
 
