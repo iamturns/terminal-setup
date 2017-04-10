@@ -88,7 +88,7 @@ mkdir ~/bin/
 
 ### Fish config ###
 
-curl -o ~/.config/fish/config.fish https://raw.githubusercontent.com/turnbullm/fish-config/master/config.fish
+curl -o ~/.config/fish/config.fish https://raw.githubusercontent.com/turnbullm/terminal-setup/master/config.fish
 
 ### Fisherman ###
 
