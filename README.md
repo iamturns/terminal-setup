@@ -271,10 +271,41 @@ z [-l|--list]
 Custom functions
 ================
 
-I prefix all my custom functions with `z-`, and have a private git repository which syncs these using the following `.gitignore` file:
+I prefix all my custom functions with `z-`, and have a private git repository which syncs all `z-*` functions when I run `z-fish-functions-sync`
 
-```
+Setup
+-----
+
+After setting up a new git repository:
+
+```bash
+cd ~/.config/fish/functions/
+git init
+git remote add origin [new-git-repo-path]
+
+echo "
 *
 !z-*
+" > .gitignore
+
+git add -A
+git commit -m "First commit"
+git push -u origin master
 ```
 
+Sync function
+-------------
+
+`~/.config/fish/functions/z-fish-functions-sync.fish:`
+
+```
+function z-fish-functions-sync
+  cd ~/.config/fish/functions/
+  git add -A
+  git commit -m "Sync"
+  git pull --rebase
+  git push
+end
+```
+
+Now run `z-fish-functions-sync` whenever you like!
