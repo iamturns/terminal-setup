@@ -267,3 +267,14 @@ z [search]
 z [search] [search2...]
 z [-l|--list]
 ```
+
+Custom functions
+================
+
+I prefix all my custom functions with `z-`, and have a private git repository which syncs these using the following `.gitignore` file:
+
+```
+*
+!z-*
+```
+
