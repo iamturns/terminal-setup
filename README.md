@@ -273,10 +273,10 @@ Custom functions
 
 I prefix all my custom functions with `z-`, and have a private git repository which syncs all `z-*` functions when I run `z-fish-functions-sync`
 
-Setup
------
+First time setup
+----------------
 
-After setting up a new git repository:
+Setup an empty git repository online, then;
 
 ```bash
 cd ~/.config/fish/functions/
@@ -288,17 +288,7 @@ echo "
 !z-*
 " > .gitignore
 
-git add -A
-git commit -m "First commit"
-git push -u origin master
-```
-
-Sync function
--------------
-
-`~/.config/fish/functions/z-fish-functions-sync.fish:`
-
-```
+echo "
 function z-fish-functions-sync
   cd ~/.config/fish/functions/
   git add -A
@@ -306,6 +296,34 @@ function z-fish-functions-sync
   git pull --rebase
   git push
 end
+" > z-fish-functions-sync.fish
+
+git add -A
+git commit -m "First commit"
+git push -u origin master
 ```
 
-Now run `z-fish-functions-sync` whenever you like!
+
+Setup on new machine
+--------------------
+
+```bash
+cd ~/.config/fish/functions/
+git init
+git remote add origin [new-git-repo-path]
+git branch --set-upstream-to=origin/master master
+git pull
+```
+
+Usage
+-----
+
+Create function prefixed with `z-`, eg: `~/.config/fish/functions/z-test.fish`:
+
+```
+function z-test
+	echo "It works!"
+end
+```
+
+Sync with git repo using: `z-fish-functions-sync`
