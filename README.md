@@ -22,7 +22,7 @@ Requirements
 - Homebrew
 - Node
 
-See [Machine Hello](https://github.com/turnbullm/til/blob/master/misc/mac/machine-hello.md) for installation.
+See [Machine Hello](https://github.com/iamturns/til/blob/master/misc/mac/machine-hello.md) for installation.
 
 Nerd font
 ---------
@@ -88,7 +88,7 @@ mkdir ~/bin/
 
 ### Fish config ###
 
-curl -o ~/.config/fish/config.fish https://raw.githubusercontent.com/turnbullm/terminal-setup/master/config.fish
+curl -o ~/.config/fish/config.fish https://raw.githubusercontent.com/iamturns/terminal-setup/master/config.fish
 
 ### Fisherman ###
 
