@@ -27,11 +27,7 @@ See [Machine Hello](https://github.com/iamturns/til/blob/master/misc/mac/machine
 Nerd font
 ---------
 
-[Nerd fonts](https://github.com/ryanoasis/nerd-fonts) are fonts patched with additional nerdy glyphs.
-
-I like ['Hack' font](https://github.com/chrissimpkins/Hack), which is patched as ['Knack Nerd Font'](https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Knack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf).
-
-Download Regular > Complete > Mono version.
+[Nerd fonts](https://nerdfonts.com/) are fonts patched with additional nerdy glyphs. I like the 'Hack' font.
 
 iTerm
 -----
