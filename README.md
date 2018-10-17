@@ -310,8 +310,10 @@ Setup on new machine
 cd ~/.config/fish/functions/
 git init
 git remote add origin [new-git-repo-path]
+# git remote add origin git@bitbucket.org:iamturns/fish-functions.git
+git fetch
+git reset origin/master
 git branch --set-upstream-to=origin/master master
-git pull
 ```
 
 Usage
