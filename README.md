@@ -80,16 +80,15 @@ Setup
 ```bash
 ### Directories ###
 
-mkdir ~/.config/fish/completions
 mkdir ~/bin/
 
 ### Fish config ###
 
 curl -o ~/.config/fish/config.fish https://raw.githubusercontent.com/iamturns/terminal-setup/master/config.fish
 
-### Fisherman ###
+### Fisher ###
 
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 
 ### Shell goodies ###
 
@@ -114,11 +113,23 @@ cp /usr/local/share/fish/vendor_completions.d/desk.fish ~/.config/fish/completio
 
 ### Fish goodies ###
 
+fisher add edc/bass
+
 fisher omf/git-flow
 fisher omf/tab
 fisher omf/theme-bobthefish
 fisher z
-```
+
+### NVM ###
+
+# Fish it not supported by NVM, but is easy to fix
+
+# Create an NVM function in ~/.config/fish/functions/nvm.fish
+
+function nvm
+    bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
+end
+
 
 All done!
 ---------
