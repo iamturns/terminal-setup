@@ -54,7 +54,8 @@ My favourite: 'Solarized dark high contrast'
 
 - Fetch them locally: `git clone git@github.com:mbadolato/iTerm2-Color-Schemes.git /var/www/vendor/iTerm2-Color-Schemes`
 - iTerm > Preferences > Profiles > Colors > Color Presets > Import
-- Select from `/var/www/vendor/iTerm2-Color-Schemes`
+- Select from `/var/www/vendor/iTerm2-Color-Schemes/schemes`
+- Select from dropdown after import
 
 Fish
 ----
