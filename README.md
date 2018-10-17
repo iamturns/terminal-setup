@@ -90,39 +90,27 @@ curl -o ~/.config/fish/config.fish https://raw.githubusercontent.com/iamturns/te
 
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 
-### Shell goodies ###
+### Goodies ###
 
 brew install git-extras
 brew install git-flow-avh
+fisher add oh-my-fish/plugin-git-flow
 brew install httpstat
 brew install thefuck
+brew install desk ;and desk init
 npm install -g fkill-cli
 npm install -g git-standup
 npm install -g tldr
-
-## Desk ##
-
-brew install desk
-desk init
-
-# Accept defaults
-
-# Look for fish completions installation directory and adjust below accordingly;
-
-cp /usr/local/share/fish/vendor_completions.d/desk.fish ~/.config/fish/completions/desk.fish
-
-### Fish goodies ###
-
 fisher add edc/bass
-
-fisher omf/git-flow
-fisher omf/tab
-fisher omf/theme-bobthefish
-fisher z
+fisher add oh-my-fish/plugin-tab
+fisher add oh-my-fish/theme-bobthefish
+fisher add jethrokuan/z
 ```
 
 NVM
 ---
+
+*Optional*
 
 Fish it not supported by NVM, but is easy to fix.
 
