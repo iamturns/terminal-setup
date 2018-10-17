@@ -309,8 +309,7 @@ Setup on new machine
 ```bash
 mv ~/.config/fish/functions ~/.config/fish/functions_bak
 mkdir ~/.config/fish/functions
-cd ~/.config/fish/functions
-git clone git@bitbucket.org:iamturns/fish-functions.git .
+git clone git@bitbucket.org:iamturns/fish-functions.git ~/.config/fish/functions
 mv ~/.config/fish/functions_bak/* ~/.config/fish/functions
 rmdir ~/.config/fish/functions_bak
 ```
