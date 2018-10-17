@@ -119,17 +119,20 @@ fisher omf/git-flow
 fisher omf/tab
 fisher omf/theme-bobthefish
 fisher z
+```
 
-### NVM ###
+NVM
+---
 
-# Fish it not supported by NVM, but is easy to fix
+Fish it not supported by NVM, but is easy to fix.
 
-# Create an NVM function in ~/.config/fish/functions/nvm.fish
+Create an NVM function in `~/.config/fish/functions/nvm.fish`
 
+```
 function nvm
     bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
 end
-
+```
 
 All done!
 ---------
