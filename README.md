@@ -307,13 +307,12 @@ Setup on new machine
 --------------------
 
 ```bash
-cd ~/.config/fish/functions/
-git init
-git remote add origin [new-git-repo-path]
-# git remote add origin git@bitbucket.org:iamturns/fish-functions.git
-git fetch
-git reset origin/master
-git branch --set-upstream-to=origin/master master
+mv ~/.config/fish/functions ~/.config/fish/functions_bak
+mkdir ~/.config/fish/functions
+cd ~/.config/fish/functions
+git clone git@bitbucket.org:iamturns/fish-functions.git .
+mv ~/.config/fish/functions_bak/* ~/.config/fish/functions
+rmdir ~/.config/fish/functions_bak
 ```
 
 Usage
