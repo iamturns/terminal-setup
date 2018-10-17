@@ -31,7 +31,7 @@ status --is-interactive; and . (rbenv init -|psub)
 # https://github.com/nvbn/thefuck
 ###
 
-eval (thefuck --alias | tr '\n' ';')
+thefuck --alias | source
 
 ###
 # Theme (bobthefish)
